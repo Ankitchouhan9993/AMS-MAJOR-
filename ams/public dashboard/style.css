@@ -1,0 +1,319 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    padding:1.5% 20%;
+    background-color:#f6f8fa;
+
+}
+.content{
+    border-radius: 2px;
+    padding: 10px 10px;
+    background-color: white;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+    
+}
+header{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+nav {
+    margin:10px 0 0 10px ;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 45%;
+    }
+nav a{
+    
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: auto;
+}
+nav a:hover{
+    font-size: 1.14rem;
+    text-decoration: underline;
+}
+.logo{
+    width: fit-content;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+}
+.logo img{
+    width: 50px;
+}
+.logo span{
+    color: blueviolet;
+}
+main{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row;
+    padding: 10px;
+}
+.alumni-logo img{
+    width: 300px;
+}
+.alumni-logo {
+    flex-basis: 50%;
+}
+.about-alumni-portal{
+    flex-basis: 50%;
+    margin-top: 30px;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    text-align: right;
+    font-family:sans-serif;
+    font-style: oblique;
+}
+.greeting{
+    font-size: 2rem;
+}
+.first-letter{
+    font-size: 2.5rem;
+    color: rgb(199, 60, 25);
+}
+/* ..............alumni section styling............... */
+#alumni,#gallery{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    background-color: antiquewhite;
+    width: 100%;
+}
+#alumni .alumni-carasel{
+    width: 100%;
+    height: 350px;
+    
+}
+#alumni .forms{
+    margin-top:10px ;
+    display: flex;
+    flex-direction: row;
+}
+#alumni .forms .search-form{
+    flex-basis: 50%;
+    text-align: justify;
+    font-size: large;
+    font-family: sans-serif;
+}
+#alumni .forms .login-form{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right:8px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+}
+#alumni .forms .login-form .login-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    font-size: 1rem;
+    padding: 10px;
+}
+#alumni .forms .login-form .login-header p{
+font-size: 1.1rem;
+}
+#forgot-password{
+    cursor: pointer;
+}
+.search-form-control{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+.search-form-control::placeholder{
+    color: rgba(137, 43, 226, 0.644);   
+}
+section.login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+section.login input,.button{
+ margin: 8px 10px;
+ padding:8px 10px;
+}
+.gal-main{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.gal-main img{
+    width:440px;
+}
+.event-sub-heading{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    
+}
+.show-events{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    display: flex;
+    padding: 20px 10px;
+    width: 100%;
+    height: 350px;
+}
+.upcomming-event{
+    margin-top: 10px;
+}
+.upcomming-events .show-events .event{
+
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+
+.upcomming-events .banner img{
+    height: 100%;
+}
+.event .desc{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.event .desc h3{
+    width: 100%;
+    background-color: rgb(235, 231, 231);
+    padding: 5px;
+    text-align: center;
+}
+.upcomming-events .event .desc .description{
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 5px;
+    overflow: hidden;
+}
+.past-events{
+    width: 100%;
+    overflow: hidden;
+}
+.show-past-events{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+    overflow: hidden;
+}
+.show-past-events .past-event{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+.past-event .title{
+ flex-basis: 100%;
+ width: 100%;
+ background-color: rgb(235, 231, 231);
+ font-size: 1.2rem; 
+ padding: 5px;
+ text-align: center;      
+}
+.past-event .banner{
+    width: 100%;
+}
+.past-event .description{
+    padding: 10px;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-family: serif;
+}
+.past-event .banner img{
+    width: 100% ;
+}
+#about{
+    margin-top: 10px;
+}
+#about .descrip{
+    font-size: large;
+    line-height: 1.8rem;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#about .descrip ol{
+    margin-left: 30px;
+    font-size: medium;
+}
+#footer .description{
+    width: 100%;
+}
+#footer .description h4{
+    margin-top: 10pxs;
+    text-align: center;
+    width: 100%;
+}
+#footer .description h4 a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: blue;
+}
+#footer .description h4 a:hover{
+    text-decoration: underline;
+}
+#footer .copyright{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.alumni-carasel{
+    display: flex;
+    flex-direction: row;
+    overflow:auto;
+}
+.alumni-carasel .alumni{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 310px;
+    width: 300px;
+    justify-content: space-around;
+    padding: 20px 40px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+
+}
+.alumni-carasel .no-record{
+    text-align: center;
+    margin: auto auto;
+}
+.alumni-carasel .alumni .avatar{
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.alumni-carasel .alumni .avatar img{
+    width: 150px;
+}

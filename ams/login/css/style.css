@@ -1,0 +1,240 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color:gray;
+  font-size: 1.2rem;
+  font-family: "Arial, Helvetica, sans-serif";
+  
+}
+b{
+  font-size: 15px;
+}
+h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
+#login-form-wrap {
+  background-color:white;
+  width: 35%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-radius: 4px;
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+#login-form {
+  padding: 0 60px;
+}
+
+input[type=email],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  height: 50px;
+  line-height: 30px;
+  border-radius: 4px;
+}
+
+#username,#password{
+  background-color: white;
+}
+
+input[type="email"],
+input[type="password"] ,
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 0 0 0 10px;
+  margin: 0;
+  color:black;
+  border: 1px solid #c2c0ca;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: inline-block;
+  background: none;
+}
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #3ca9e2;
+}
+input[type="email"]:focus:invalid,
+input[type="password"]:focus:invalid,
+input[type="text"]:focus:invalid,
+input[type="number"]:focus:invalid,
+input[type="date"]:focus:invalid {
+  color: #000;
+  border-color: 3ca9e2;
+}
+
+#login{
+  box-sizing:unset;
+  margin: 0;
+  padding:14px 25px;
+  border-radius: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #3ca9e2;
+  color: #fff;
+  text-transform: uppercase;
+  
+}
+
+#register{
+  background-color: #3ca9e2;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#login:hover,
+#register:hover{
+  background-color:#000;
+  color: #3ca9e2;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  border: none;
+  display: block;
+  background-color:#329dd5;
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#forgot-password {
+  background-color:black;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+}
+#click-here {
+  background-color:black;
+  color:#329dd5;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+  text-decoration: none;
+}
+
+/* ---------till above login css---------------- */
+
+#register-form-wrap{
+
+  background-color:white;
+  width: 35%;
+  margin: 30px auto;
+  text-align: baseline;
+  padding: 20px 20px;
+  border-radius: 4px;
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.4);
+  
+}
+
+#formopen{
+  padding: 10px;
+  font-size: 16px;
+}
+
+table{
+  font-family: Arial, Helvetica, sans-serif; 
+  color:#000; 
+  font-size: 16px; 
+  font-style: normal;
+  font-weight: bold;
+  background-color: #fff; 
+  border-collapse: collapse; 
+  border: 4px solid #000000;
+  border-style: none;
+  align-items: baseline;
+
+}
+table.inner{
+  margin: 10px;
+
+}
+
+#faculty-register-form
+{
+  display: none;
+}
+
+#alumni-register-form{
+  display: none;
+}
+
+#branch{
+  padding: 10px;
+  font-size: 16px;
+}
+
+#regLogin{
+  align-items: center;
+}
+
+#login-btn{
+  background-color: #3ca9e2;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+#login-btn:hover{
+background-color:#000;
+  color: #3ca9e2;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+

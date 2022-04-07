@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+  <script>
+    function formOpener(a) 
+      {
+        if ((a.value == 'alumni') || (a.value == 'student')) {
+          document.getElementById("alumni-register-form").style.display = "block";
+          document.getElementById("faculty-register-form").style.display = "none";
+        }
+        else {
+          document.getElementById("faculty-register-form").style.display = "block";
+          document.getElementById("alumni-register-form").style.display = "none";
+        }
+
+      }
+
+  </script>
+
+  <div id="register-form-wrap">
+    <h2>Registration</h2>
+    <center>
+      <label>Register As : </label>
+      <select id="formopen" onchange="formOpener(this)">
+        <option value="">Select here</option>
+        <option value="alumni">Alumni</option>
+        <option value="faculty">Faculty</option>
+        <option value="student">Student</option>
+        <option value="HOD">HOD</option>
+      </select>
+    </center>
+    <form id="alumni-register-form">
+
+
+      <table align="center" cellpadding="10" rowpadding="50">
+
+        <!--------------------- Full name ------------------------------------------>
+        <tr>
+          <td>Full Name</td>
+          <td><input type="text" name="Full Name" maxlength="50" placeholder="Full Name" required />
+          </td>
+        </tr>
+
+        <!------------------------ Enrollment no. --------------------------------------->
+        <tr>
+          <td>Enrollment No.</td>
+          <td><input type="text" name="Enrollment" maxlength="50" placeholder="Enrollment number" required />
+          </td>
+        </tr>
+
+        <!-------------------------- branch ------------------------------------->
+        <tr>
+          <td>Branch</td>
+          <td><select id="branch">
+              <option value="">select branch</option>
+              <option value="CSE">Computer science and engineering</option>
+              <option value="EE">Electrical engineering</option>
+              <option value="ME">Mechanical engineering</option>
+              <option value="CE">Civil engineering</option>
+              <option value="EC">Electronics and communication</option>
+              <option value="IT">Information technology</option>
+
+            </select>
+
+          </td>
+        </tr>
+
+        <!-------------------------- Email ID ------------------------------------->
+        <tr>
+          <td>Email ID</td>
+          <td><input type="email" name="EmailID" maxlength="100" placeholder="Email" required /></td>
+        </tr>
+
+        <!------------------------ passout year --------------------------------------->
+        <tr>
+          <td>Passout year</td>
+          <td><input type="number" id="date" name="passoutyear" min="2007" max="2099" step="1" placeholder="year" required />
+          </td>
+        </tr>
+
+
+        <!-------------------------- Mobile Number ------------------------------------->
+        <tr>
+          <td>Mobile Number</td>
+          <td>
+            <input type="text" name="Mobile Number" maxlength="10" placeholder="10 digit mobile no." />
+          </td>
+        </tr>
+
+        <!---------------------- Gender ------------------------------------->
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="Gender" value="Male" />
+            Male
+            <input type="radio" name="Gender" value="Female" />
+
+            Female
+          </td>
+        </tr>
+
+        <!--------------------------Date Of Birth----------------------------------->
+
+        <tr>
+          <td>Date of Birth</td>
+          <td>
+            <input type="date" name="select date" required />
+          </td>
+        </tr>
+
+        <!----------------------- password ------------------------------->
+
+        <tr>
+          <td>Password</td>
+          <td>
+            <input type="password" name="Enter password" placeholder="Enter password" required />
+          </td>
+        </tr>
+
+        <!----------------------- Confirm password ------------------------------->
+
+        <tr>
+          <td>Confirm password</td>
+          <td>
+            <input type="password" name="Confirm password" placeholder="Confirm password" required />
+          </td>
+        </tr>
+
+        <!----------------------- Submit------------------------------->
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" id="register" value="Submit">
+            
+          </td>
+        </tr>
+        
+      </table>
+     <center> <div id="regLogin"><b>(OR) Already have an account?</b>
+        <a id="login-btn" href="../../login/html/login.html">Login</a></div></center>
+    </form>
+
+    <!-- hod and faculty form-->
+
+    <form id="faculty-register-form">
+
+
+      <table align="center" cellpadding="10" rowpadding="50">
+
+        <!--------------------- Full Name ------------------------------------------>
+        <tr>
+          <td>Full Name</td>
+          <td><input type="text" name="Full Name" maxlength="50" placeholder="Full Name" required />
+          </td>
+        </tr>
+
+        <!-------------------------- Email ID ------------------------------------->
+        <tr>
+          <td>Email ID</td>
+          <td><input type="email" name="EmailID" maxlength="100" placeholder="Email" required /></td>
+        </tr>
+
+        <!-------------------------- Department ------------------------------------->
+        <tr>
+          <td>Department</td>
+          <td><select id="branch">
+              <option value="">Select Department</option>
+              <option value="CSE">Computer science and engineering</option>
+              <option value="EE">Electrical engineering</option>
+              <option value="ME">Mechanical engineering</option>
+              <option value="CE">Civil engineering</option>
+              <option value="EC">Electronics and communication</option>
+              <option value="IT">Information technology</option>
+
+            </select>
+
+          </td>
+        </tr>
+
+        <!-------------------------- Mobile Number ------------------------------------->
+        <tr>
+          <td>Mobile Number</td>
+          <td>
+            <input type="text" name="Mobile Number" maxlength="10" placeholder="10 digit mobile no." required />
+          </td>
+        </tr>
+
+        <!-----------------------------Specilizaion--------------------------------------->
+        <tr>
+          <td>Specialization</td>
+          <td>
+            <input type="text" name="Specialization" maxlength="500" placeholder="Experienced field" required />
+          </td>
+        </tr>
+        <!---------------------- Gender ------------------------------------->
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="Gender" value="Male" />
+            Male
+            <input type="radio" name="Gender" value="Female" />
+            Female
+          </td>
+        </tr>
+
+        <!----------------------- password ------------------------------->
+
+        <tr>
+          <td>Password</td>
+          <td>
+            <input type="password" name="Enter password" placeholder="Enter password" required />
+          </td>
+        </tr>
+
+        <!----------------------- Confirm password ------------------------------->
+
+        <tr>
+          <td>Confirm password</td>
+          <td>
+            <input type="password" name="Confirm password" placeholder="Confirm password" required />
+          </td>
+        </tr>
+
+        <!----------------------- Submit ------------------------------->
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" id="register" value="Submit"> 
+          </td>
+        </tr>
+      </table>
+     <center> <div id="regLogin"><b>Already have an account?</b>
+        <a id="login-btn" href="../../login/html/login.html">Login</a></div></center>
+    </form>
+  </div>
+  <script>
+    document.querySelector("#register").addEventListener('click',()=>{
+      window.location.href="http://localhost:5500/register/html/activInfo.html";
+    });
+  </script>
+</body>
+
+</html>

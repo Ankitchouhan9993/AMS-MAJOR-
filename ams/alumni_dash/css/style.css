@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f8fa;
+    /* overflow-x: hidden; */
+    overflow-x: hidden;
+}
+nav{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left:200px;
+    padding-right: 200px;
+    height: 55px;
+    z-index: 5;
+}
+nav .logo img{
+    margin-top: 3px;
+    width:24px;
+}
+nav .logo{
+ cursor: pointer;
+} 
+nav .container1, nav .container2{
+    align-items: center;
+    display: flex;
+    flex-basis: 50%;
+}
+nav .container2{
+    text-align: right;
+}
+nav .nav-items{
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    margin-left:auto;
+}
+nav .nav-items:hover{
+    text-decoration: underline;
+}
+nav .nav-items img{
+    width: 24px;
+}
+nav .nav-items .profile{
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+}
+nav .nav-items:last-child{
+    position: relative;
+}
+nav .me{
+    width: 250px;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    position: absolute;
+    right: 190px;
+    top: 60px;
+    border-radius:10px;
+    border-top-right-radius: 0;
+    background-color: white;
+    display: none;
+    text-align: center;
+    padding-bottom: 20px ;
+
+    
+}
+nav .search-bar{
+    margin-left: 15px;
+}
+
+nav .search-bar input:focus{
+  outline:1px solid gray;
+  width: 350px;
+  transition: all 0.2s ease-in;
+}
+nav .search-bar input{
+    padding: 8px 5px 8px 35px;
+    font-size: medium;
+    width: 270px;
+    border-radius: 5px;
+    border: none;
+    background-color:#f6f8fa;
+}
+main{
+    margin:auto;
+    width: 75%;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-between;
+    position: relative;
+}
+main .profile-info{
+    width:240px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+
+}
+main .post{
+    width:540px;
+    border-radius: 10px;
+    height: fit-content;
+}
+main .alumni-news{
+    width: 330px;
+    border-radius: 10px;
+    height: 450px;
+    position: sticky;
+    top: 70px;
+}
+main .profile-info{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    height: fit-content;
+    top: 70px;
+}
+main .profile-info .profile-pic{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 2;
+}
+main .profile-info .profile-pic img{
+    width: 80px;
+    
+}
+main .profile-info .details .my-items:hover{
+opacity: 1;
+background-color: #f6f8fa;
+}
+main .profile-info .details .my-items{
+    opacity: 0.8;
+    padding: 10px 10px;
+}
+main .profile-info .details .connections{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px;
+    border-bottom: 1px solid gray;
+    opacity: 0.8;
+}
+main .profile-info .details .connections:hover{
+    background-color: #f6f8fa;
+    opacity: 1;
+}
+hr{
+    width: 100%;
+}
+main .profile-info .profile-descrip a:hover{
+     text-decoration: underline;
+     opacity: 1;
+}
+main .profile-info .profile-descrip a{
+    color: black;
+    text-decoration: none;
+    opacity: 0.8;
+}
+main .profile-info .profile-descrip{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 10px 0;
+    justify-content: space-between;
+}
+main .profile-info .profile-descrip p{
+    margin-top: 8px;
+    opacity: 0.8;
+}
+main .profile-info .details{
+    border-top: 0.1px  solid gray;
+    width: 100%;
+   padding: 0;
+    text-align: left;
+}
+main .profile-info .profile-pic::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-color: gray;
+    left: 0;
+    top: 0;
+    height: 60px;
+    z-index: -1;
+
+}
+
+main .post .do-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+    background-color: white;
+    border-radius: 10px;
+}
+main .post .do-post .profile img {
+    cursor: pointer;
+    width: 50px;
+}
+main .post .do-post .post-bar input:hover{
+  background-color: #f6f8fa;
+}
+main .post .do-post .post-bar input{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: white;
+    
+    cursor: pointer;
+}
+main .post .do-post .post-bar{
+    flex-basis: 88%;
+    text-align: center;
+}
+
+main .post .do-post .profile {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+main .post .public-posts {
+   align-items: center;
+   justify-content: center;
+   overflow-x: hidden;
+}    
+main .post .public-posts .post-item{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+}
+/*--------------------------- me box styles-------------------- */
+nav .container2 .me .view-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    
+}
+nav .container2 .me .view-profile .profile-pic{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 50%;
+    text-align: center;
+    flex-basis:40% ;
+}
+nav .container2 .me .view-profile .profile-pic img{
+    width: 60px;
+}
+nav .container2 .me .view-profile  a {
+    text-decoration: none;
+}
+nav .container2 .me .see-profile{
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid blue;
+    width: fit-content;
+    border-radius: 30px;
+    margin: 10px auto;
+    padding: 5px  70px;
+    cursor: pointer;
+}
+nav .container2 .me .sign-out{
+   color: red;
+   cursor: pointer;
+} 
+.post .public-posts .post-item .post-profile .profile-details .view-profile .profile-pic img{
+
+    width: 45px;
+}
+.post .public-posts .post-item .post-profile .profile-details .view-profile .profile-pic{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 50%;
+    text-align: center;
+    flex: basis 11% ;
+}
+    .post .public-posts .post-item .post-profile .profile-details .view-profile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        padding: 5px;
+    }
+    
+    .post .public-posts .post-item .post-profile .profile-details .profile-descrip{
+        margin-left:10px ;
+    }
+    .post .public-posts .post-item .post-profile .text-content{
+        text-align: justify;
+        margin: 0 10px 10px 10px;
+    }
+    .post .public-posts .post-item .image img{
+        width: 100%;
+    }
+    .post .public-posts .post-item .total-comments{
+        text-align: right;
+        padding-right: 10px;
+        color: gray;
+        cursor: pointer;
+    }
+    .post .public-posts .post-item .action{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing:border-box;
+
+    }
+    .post .public-posts .post-item .post-reply, .post .public-posts .post-item .post-report{
+        cursor: pointer;
+        flex-basis: 50%;
+        text-align: center;
+        padding: 5px 10px;
+        margin-bottom:5px;
+    }
+    .post .public-posts .post-item .post-reply:hover, .post .public-posts .post-item .post-report:hover{
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+    }
+    .post .public-posts .post-item .see-more-btn{
+        text-align: right;
+        float: right;
+        margin-bottom: 5px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    .post .public-posts .post-item .see-more-btn:hover{
+        text-decoration: underline;
+    }
+    .alumni-news .news-area {
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+        transition: all 0.5s ease-in-out;
+    }
+    .alumni-news .news-area .head-bar img {
+        width: 20px;
+        cursor: pointer;
+    }  
+    .alumni-news .news-area .head-bar {
+        padding: 10px 10px 0 10px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .alumni-news .news-area .all-news {
+        padding-left: 25px;
+        height:140px;
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+    }
+    .alumni-news .news-area .see-more-btn {
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .alumni-news .news-area .all-news li{
+        margin-top: 10px;
+        padding: 5px;
+    }
+    .alumni-news .news-area .see-more-btn:hover{
+        text-decoration: underline;
+    }
+    .alumni-news .news-area .all-news li a{
+        text-decoration: none;
+    }
+    .alumni-news .news-area .all-news li a .news-heading{
+        color: black;
+    }
+    .alumni-news .footer{
+       padding: 5px;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+    .alumni-news .footer .links a:hover{
+       text-decoration: underline;
+    }
+    .alumni-news .footer .links a{
+       color: gray;
+       text-decoration: none ;
+    }
+    .alumni-news .news-area .head-bar .info-desc{
+        position: absolute;
+        width: 300px;
+        background-color: white;
+        padding: 10px;
+        right: 13px;
+        top: 31px;
+        border: 1px solid gray;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        transition: all 1s ease-in-out;
+        display: none;
+    }
+    .alumni-news .news-area .all-news li:hover{
+        background-color: #e7e9eb;
+    }
+    .alumni-news .news-area .all-news ul{
+        list-style: circle;
+    }
