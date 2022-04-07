@@ -160,8 +160,8 @@ function showAbout(info){
                 document.querySelector("#about").innerHTML=text;
 }
 document.querySelector(".logo").addEventListener('click',()=>{
-    window.location.href='http://127.0.0.1:5500/dashboard/index.htm';
+    window.location.href='https://Ankitchouhan9993.github.io/AMS-MAJOR-/blob/main/ams/public%20dashboard/index.htm';
 })
 document.querySelector("#reg-btn").addEventListener('click',()=>{
-    window.location.href="http://127.0.0.1:5500/register/html/register.html";
+    window.location.href="https://Ankitchouhan9993.github.io/AMS-MAJOR-/tree/main/ams/register/html";
 });
